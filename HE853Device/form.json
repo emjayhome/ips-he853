@@ -1,0 +1,82 @@
+{
+    "elements":
+            [
+                {
+                    "type": "Label",
+                    "label": "DIP-Schalter auf Stellung ON hier makieren:"
+                },
+                {
+                    "name": "Bit1",
+                    "type": "CheckBox",
+                    "caption": "1"
+                },
+                {
+                    "name": "Bit2",
+                    "type": "CheckBox",
+                    "caption": "2"
+                },
+                {
+                    "name": "Bit3",
+                    "type": "CheckBox",
+                    "caption": "3"
+                },
+                {
+                    "name": "Bit4",
+                    "type": "CheckBox",
+                    "caption": "4"
+                },
+                {
+                    "name": "Bit5",
+                    "type": "CheckBox",
+                    "caption": "5"
+                },
+                {
+                    "name": "BitA",
+                    "type": "CheckBox",
+                    "caption": "A"
+                },
+                {
+                    "name": "BitB",
+                    "type": "CheckBox",
+                    "caption": "B"
+                },
+                {
+                    "name": "BitC",
+                    "type": "CheckBox",
+                    "caption": "C"
+                },
+                {
+                    "name": "BitD",
+                    "type": "CheckBox",
+                    "caption": "D"
+                },
+                {
+                    "name": "BitE",
+                    "type": "CheckBox",
+                    "caption": "E"
+                },
+                {
+                    "name": "Repeat",
+                    "type": "Select",
+                    "caption": "Sende-Zyklen",
+                    "options": [
+                        {
+                            "label": "1",
+                            "value": 1
+                        },
+                        {
+                            "label": "2",
+                            "value": 2
+                        },
+                        {
+                            "label": "3",
+                            "value": 3
+                        },
+                        {
+                            "label": "4",
+                            "value": 4
+                        }
+                    ]
+                }
+            ]
+}

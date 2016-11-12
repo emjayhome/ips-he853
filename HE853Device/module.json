@@ -1,0 +1,14 @@
+{
+    "id": "{FD707350-0A1B-4447-8E4A-86FFFB737A3B}",
+    "name": "HE853Device",
+    "type": 3,
+    "vendor": "Elro",
+    "aliases":
+    [
+        "Elro HE853 Device"
+    ],  
+    "parentRequirements": [""],
+    "childRequirements": [""],
+    "implemented": [""],
+    "prefix": "HE853"
+}
