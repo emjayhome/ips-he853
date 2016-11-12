@@ -80,11 +80,11 @@ class HE853Device extends IPSModule
 
     public function RequestAction($Ident, $Value) {
         if ($Ident == 'STATE') {
-            $this->Switch($Value);
+            $this->DoSwitch($Value);
         }
     }
 
-    protected function Switch(boolean $State) {
+    protected function DoSwitch(boolean $State) {
         $DevNum = $this->GetDeviceNumber();
         $Repeat = $this->ReadPropertyInteger("Repeat");
         if ((bool) $State) {
