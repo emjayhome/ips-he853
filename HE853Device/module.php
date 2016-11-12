@@ -88,16 +88,16 @@ class HE853Device extends IPSModule
         $DevNum = $this->GetDeviceNumber();
         $Repeat = $this->ReadPropertyInteger("Repeat");
         if ((bool) $State) {
-            exec('..\HE853WinLib\he853_switcher.exe ' . $DevNum . ' 1 ' . $Repeat, $output, $result);
+            $out = exec('..\HE853WinLib\he853_switcher.exe ' . $DevNum . ' 1 ' . $Repeat, $output, $result);
         } else {
-            exec('..\HE853WinLib\he853_switcher.exe ' . $DevNum . ' 0 ' . $Repeat, $output, $result);
+            $out = exec('..\HE853WinLib\he853_switcher.exe ' . $DevNum . ' 0 ' . $Repeat, $output, $result);
         }
 
         if ($result === 0) {
             SetValueBoolean($this->GetIDForIdent('STATE'), $State);
             return true;
         } else {
-            trigger_error('Fehler: ' . implode($output) . ' Result = ' . $result, E_USER_NOTICE);
+            trigger_error('Fehler: ' . $out . ' Result = ' . $result, E_USER_NOTICE);
             return false;
         }
     }
