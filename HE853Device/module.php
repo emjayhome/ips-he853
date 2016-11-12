@@ -84,7 +84,7 @@ class HE853Device extends IPSModule
         }
     }
 
-    protected function DoSwitch(boolean $State) {
+    public function DoSwitch(boolean $State) {
         $DevNum = $this->GetDeviceNumber();
         $Repeat = $this->ReadPropertyInteger("Repeat");
         if ((bool) $State) {
