@@ -97,7 +97,7 @@ class HE853Device extends IPSModule
             SetValueBoolean($this->GetIDForIdent('STATE'), $State);
             return true;
         } else {
-            trigger_error('Fehler: ' . implode($output), E_USER_NOTICE);
+            trigger_error('Fehler: ' . implode($output) . ' Result = ' . $result, E_USER_NOTICE);
             return false;
         }
     }
