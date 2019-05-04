@@ -7,8 +7,8 @@
     [
         "Elro HE853 Device"
     ],  
-    "parentRequirements": [""],
-    "childRequirements": [""],
-    "implemented": [""],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
     "prefix": "HE853"
 }
